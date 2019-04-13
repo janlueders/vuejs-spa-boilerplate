@@ -2,6 +2,10 @@
   "message": "hello i18n !!",
   "logout": "Logout",
   "Home": "Home",
+  "login": {
+    "failedLogin": "Your credentials are not correct",
+    "enterCredentials": "Please, enter your credentials"
+  },
   "buttons": {
     "language": "Lang"
   }
