@@ -1,0 +1,8 @@
+{
+  "message": "hello i18n !!",
+  "logout": "Logout",
+  "Home": "Home",
+  "buttons": {
+    "language": "Lang"
+  }
+}
