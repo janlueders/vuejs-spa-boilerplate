@@ -1,6 +1,6 @@
 {
-  "name": "vue-spa-template",
-  "version": "0.1.0",
+  "name": "Sample PWA",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,18 +10,23 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap-vue": "^2.0.0-rc.16",
+    "bootstrap-vue": "^2.0.0-rc.19",
+    "register-service-worker": "^1.6.2",
     "vue": "^2.6.6",
     "vue-i18n": "^8.10.0",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.5.5",
-    "@vue/cli-plugin-eslint": "^3.5.0",
-    "@vue/cli-service": "^3.5.3",
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-plugin-pwa": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
     "babel-eslint": "^10.0.1",
+    "compression-webpack-plugin": "^2.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "sw-precache-webpack-plugin": "^0.11.5",
     "vue-cli-plugin-i18n": "^0.6.0",
     "vue-template-compiler": "^2.5.21"
   },
@@ -31,10 +36,9 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/strongly-recommended",
       "eslint:recommended"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }
